@@ -13,7 +13,7 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css?v=20" rel="stylesheet" />
+    <link href="css/styles.css?v=21" rel="stylesheet" />
     <!-- Particles.js library -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     </head>
@@ -235,13 +235,15 @@
                         </div>
                     </li>
                     <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/op.png" alt=""></div>
+                        <a class="timeline-image timeline-image-clickable" href="#pmDetail" data-bs-toggle="modal" data-bs-target="#pmDetail" title="Click for more" aria-label="More about this role">
+                            <img class="rounded-circle img-fluid" src="assets/img/op.png" alt="Project Manager">
+                        </a>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>Fall 2025</h4>
                                 <h4 class="subheading">Project Manager</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Lead a team of 16 students to document, build, and develop an NLP model for user-based music recommendations. </p></div>
+                            <div class="timeline-body"><p class="text-muted">Led a 16-person team to build an NLP music recommendation product.</p></div>
                         </div>
                     </li>
                     <li>
@@ -439,7 +441,7 @@
                 </div>
             </div>
         </footer>
-        <div class="modal fade" id="msuDetail" tabindex="-1" aria-labelledby="msuDetailLabel" aria-hidden="true">
+        <div class="modal fade timeline-detail" id="msuDetail" tabindex="-1" aria-labelledby="msuDetailLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content timeline-detail-modal">
                     <div class="modal-header">
@@ -455,6 +457,27 @@
                             <li>Outperformed a graph neural ODE by over 100x on prediction, and returned a readable equation rather than only a forecast.</li>
                             <li>Validated on real Facebook, Gnutella, and U.S. power-grid graphs, not only synthetic ones.</li>
                             <li>Recovered the coupling on Gnutella when only 10% of nodes were observed.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade timeline-detail" id="pmDetail" tabindex="-1" aria-labelledby="pmDetailLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content timeline-detail-modal">
+                    <div class="modal-header">
+                        <div>
+                            <h5 class="modal-title" id="pmDetailLabel">Project Manager</h5>
+                            <p class="timeline-detail-kicker mb-0">Fall 2025</p>
+                        </div>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="timeline-detail-list">
+                            <li>Defined product requirements and ran user research to set the product direction.</li>
+                            <li>Oversaw development of an ML pipeline and set the success metrics.</li>
+                            <li>Directed a 16-person team to ship a full-stack ML web app in 10 weeks.</li>
+                            <li>Owned the roadmap and prioritized frontend and backend work so it launched on time.</li>
                         </ul>
                     </div>
                 </div>
