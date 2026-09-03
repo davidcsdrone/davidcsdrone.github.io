@@ -13,7 +13,7 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/styles.css?v=20" rel="stylesheet" />
     <!-- Particles.js library -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     </head>
@@ -32,11 +32,12 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#timeline">Timeline</a></li>
                     <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
                     <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="https://davidcsdrone.github.io/drone_videos">Video Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://davidcsdrone.github.io/drone_videos/" target="_blank" rel="noopener noreferrer">Video Portfolio</a></li>
 
 </ul>
                 </div>
@@ -65,7 +66,7 @@
                     <!-- Right: Text -->
                     <div class="about-text">
                         <p>
-                            Hello, I'm David! I am a third-year U.C. Berkeley student pursuing
+                            Hello, I'm David! I am a fourth-year U.C. Berkeley student pursuing
                             a degree in
                             <a href="https://cdss.berkeley.edu/" target="_blank" class="highlight-link">data science</a>
                             and a minor in
@@ -78,6 +79,43 @@
                             In addition to my academic pursuits, I am someone who loves video editing, working on creative projects, 
                             exploring new technologies, as well as watching the symphony and opera. Thanks for stopping by!
                          </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page-section bg-light" id="projects">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Projects</h2>
+                </div>
+                <div class="project-grid">
+                    <div class="project-col">
+                        <div class="project-card">
+                            <h4>Interview Mirror</h4>
+                            <p class="text-muted">Records timed camera answers to Amazon, Google, and Meta behavioral questions, then grades them against that company's hire bar: score, what was weak, and what to fix next. Built with Next.js, FastAPI, Whisper, and GPT-4o.</p>
+                            <div class="project-actions">
+                                <a href="https://interviewmirror.org" class="btn btn-dark btn-sm" target="_blank" rel="noopener noreferrer">View Website</a>
+                                <a href="https://github.com/davidcsdrone/hostile-interview-prep" class="btn btn-outline-dark btn-sm" target="_blank" rel="noopener noreferrer">View Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-col">
+                        <div class="project-card">
+                            <h4>Isabel's Spa</h4>
+                            <p class="text-muted">Built and shipped the first website for a spa, including online booking so clients do not have to call. Cut the appointment process in half. HTML, CSS, JavaScript, and Node.js.</p>
+                            <div class="project-actions">
+                                <a href="https://isabelspa.org" class="btn btn-dark btn-sm" target="_blank" rel="noopener noreferrer">View Website</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-col">
+                        <div class="project-card">
+                            <h4>Video Portfolio</h4>
+                            <p class="text-muted">Shot, directed, and edited aerial films from Chicago, Seoul, Busan, Berkeley, and Jeju Island.</p>
+                            <div class="project-actions">
+                                <a href="https://davidcsdrone.github.io/drone_videos/" class="btn btn-dark btn-sm" target="_blank" rel="noopener noreferrer">Watch Videos</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -185,7 +223,19 @@
                 </div>
                 <ul class="timeline">
                     <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/op.png"></div>
+                        <a class="timeline-image timeline-image-clickable" href="#msuDetail" data-bs-toggle="modal" data-bs-target="#msuDetail" title="Click for more" aria-label="More about this research">
+                            <img class="rounded-circle img-fluid" src="assets/img/nsf.jpeg" alt="NSF REU" />
+                        </a>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Summer 2026</h4>
+                                <h4 class="subheading">Machine Learning Research Intern</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Built an algorithm that takes noisy time-series from a network and finds how infection spreading and awareness of the disease affect each other.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/op.png" alt=""></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>Fall 2025</h4>
@@ -194,19 +244,18 @@
                             <div class="timeline-body"><p class="text-muted">Lead a team of 16 students to document, build, and develop an NLP model for user-based music recommendations. </p></div>
                         </div>
                     </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/nsf.jpeg" alt="..." /></div>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/nsf.jpeg" alt="NSF" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>Summer 2025</h4>
                                 <h4 class="subheading">N.S.F Undergraduate Researcher</h4>
                             </div>
-                    
                             <div class="timeline-body"><p class="text-muted">Selected to pursue extensive research in the area of computational geometry and wireless sensor networks.</p></div>
                         </div>
                     </li>
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/skydeck_berkeley_logo.jpeg" alt="..." /></div>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/skydeck_berkeley_logo.jpeg" alt="Berkeley SkyDeck" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>Fall 2024</h4>
@@ -215,8 +264,8 @@
                             <div class="timeline-body"><p class="text-muted">Interned for a Berkeley SkyDeck startup in the AI and microservices space. Learned Swift and Python to test and deploy a backend service. </p></div>
                         </div>
                     </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/YonseiUniversityEmblem.svg.jpg" alt="..." /></div>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/YonseiUniversityEmblem.svg.jpg" alt="Yonsei University" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>Summer 2024</h4>
@@ -225,7 +274,8 @@
                             <div class="timeline-body"><p class="text-muted">Studied abroad at the prestigeous Yonsei University in Seoul, South Korea.</p></div>
                         </div>
                     </li>
-                   <li> <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/cal.jpg" alt="..." /></div>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/cal.jpg" alt="UC Berkeley" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>Fall 2023</h4>
@@ -242,29 +292,31 @@
     <div class="container">
         <div class="text-center">
             <h2 class="section-heading text-uppercase">Publications</h2>
-            <h3 class="section-subheading text-muted">A brief overview of my research contributions.</h3>
         </div>
         <div class="row">
             <div class="col-lg-8 mx-auto">
-                <div class="publication-entry mb-4">
-                    <p class="lead">
-                        <strong>Cruz Santiago, D.</strong>, Ammari, H. (Accepted, in press). "An Efficient Geometric Inversion Approach to Hole Detection and Restoration in Wireless Sensor Networks" Accepted and in press, camera-ready to <em> 2025 16th International Federation for Information Processing (IFIP) Wireless and Mobile Networking Conference</em>.
+                <div class="publication-card">
+                    <p class="publication-venue">IFIP WMNC 2025</p>
+                    <p class="publication-citation">
+                        <a href="https://dl.ifip.org/db/conf/wmnc/wmnc2025/1571186547.pdf" class="publication-link" target="_blank" rel="noopener noreferrer"><strong>Cruz Santiago, D.</strong>, Ammari, H. (2025). "An Efficient Geometric Inversion Approach to Hole Detection and Restoration in Wireless Sensor Networks."</a>
                     </p>
-<a href="assets/Cruz_Santiago_Conference_Abstract_IFIP_WMNC_Conference_2025.pdf" 
-   class="btn btn-outline-dark btn-sm" 
-   target="_blank">
-   View Abstract
-</a>                </div>
-                <hr>
-                <div class="publication-entry mt-4">
-                     <p class="lead">
-                        <strong>Cruz Santiago, D.</strong>, Ammari, H. (Accepted). "An Improved, Efficient and Cost-Aware Approach to Hole Restoration in Heterogeneous Wireless Sensor Networks Using Geometric Inversion" Accepted to <em>2026 17th IEEE Latin American Symposium on Circuits and Systems</em>.
+                    <p class="publication-presented">Presented in Leuven, Belgium.</p>
+                    <div class="publication-actions">
+                        <a href="https://dl.ifip.org/db/conf/wmnc/wmnc2025/1571186547.pdf" class="btn btn-dark" target="_blank" rel="noopener noreferrer">View Paper</a>
+                        <a href="https://docs.google.com/presentation/d/1wfhe7zklPuAwiiHgqLHX1LkGaaU766i-v-l-N1Wcyts/edit?usp=sharing" class="btn btn-outline-dark" target="_blank" rel="noopener noreferrer">View Conference Slides</a>
+                    </div>
+                </div>
+                <div class="publication-card">
+                    <p class="publication-venue">IEEE LASCAS 2026</p>
+                    <p class="publication-citation">
+                        <a href="https://ieeexplore.ieee.org/document/11457127" class="publication-link" target="_blank" rel="noopener noreferrer"><strong>Cruz Santiago, D.</strong>, Ammari, H. (2026). "An Improved, Efficient and Cost-Aware Approach to Hole Restoration in Heterogeneous Wireless Sensor Networks Using Geometric Inversion."</a>
                     </p>
-<a href="assets/CruzSantiago_Conference_Abstract_LASCAS_2026.pdf" 
-   class="btn btn-outline-dark btn-sm" 
-   target="_blank">
-   View Abstract
-</a>                    </div>
+                    <p class="publication-presented">Presented in Arequipa, Peru.</p>
+                    <div class="publication-actions">
+                        <a href="https://ieeexplore.ieee.org/document/11457127" class="btn btn-dark" target="_blank" rel="noopener noreferrer">View Paper</a>
+                        <a href="https://docs.google.com/presentation/d/1B0UvaUl4i_PwAxn2PIKfqY6xP-9-pjGI/edit?usp=sharing&amp;ouid=108302774834539304096&amp;rtpof=true&amp;sd=true" class="btn btn-outline-dark" target="_blank" rel="noopener noreferrer">View Conference Slides</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -387,6 +439,27 @@
                 </div>
             </div>
         </footer>
+        <div class="modal fade" id="msuDetail" tabindex="-1" aria-labelledby="msuDetailLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content timeline-detail-modal">
+                    <div class="modal-header">
+                        <div>
+                            <h5 class="modal-title" id="msuDetailLabel">Machine Learning Research Intern</h5>
+                            <p class="timeline-detail-kicker mb-0">Summer 2026 NSF REU</p>
+                        </div>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="timeline-detail-list">
+                            <li>Used weak-form SINDy to recover the infection-awareness coupling from noisy time-series. Standard SINDy failed at 10% noise. This method did not.</li>
+                            <li>Outperformed a graph neural ODE by over 100x on prediction, and returned a readable equation rather than only a forecast.</li>
+                            <li>Validated on real Facebook, Gnutella, and U.S. power-grid graphs, not only synthetic ones.</li>
+                            <li>Recovered the coupling on Gnutella when only 10% of nodes were observed.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Portfolio Modals-->
         <!-- Portfolio item 1 modal popup-->
         <!-- <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">

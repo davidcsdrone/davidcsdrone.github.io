@@ -11418,3 +11418,212 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
+.project-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background: #fff;
+  border: 1px solid #dee2e6;
+}
+
+#projects .project-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 30rem);
+  justify-content: center;
+  gap: 2rem;
+}
+
+@media (min-width: 992px) {
+  #projects .project-grid {
+    grid-template-columns: 30rem 30rem;
+  }
+
+  #projects .project-grid .project-col:last-child {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: 30rem;
+  }
+}
+
+.project-card h4 {
+  margin-bottom: 1rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700;
+}
+
+.project-card p {
+  margin-bottom: 1.25rem;
+  flex: 1;
+}
+
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+#publications .section-heading {
+  margin-bottom: 3rem;
+}
+
+.publication-card {
+  padding: 2rem 1.75rem 1.75rem;
+  margin-bottom: 1.5rem;
+  background: #fff;
+  border: 1px solid #dee2e6;
+  border-left: 4px solid #212529;
+}
+
+.publication-card:last-child {
+  margin-bottom: 0;
+}
+
+.publication-venue {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #212529;
+  margin-bottom: 0.85rem;
+}
+
+.publication-citation {
+  font-size: 1.15rem;
+  line-height: 1.55;
+  margin-bottom: 0.45rem;
+}
+
+#publications a.publication-link {
+  color: inherit;
+  text-decoration: none;
+  font-weight: inherit;
+}
+
+#publications a.publication-link:hover,
+#publications a.publication-link:focus {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.publication-presented {
+  color: #6c757d;
+  font-size: 0.95rem;
+  margin-bottom: 1.35rem;
+}
+
+.publication-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.publication-actions .btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  padding: 0.65rem 1.2rem;
+  border-radius: 0;
+}
+
+.timeline > li a.timeline-image-clickable {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  transition: filter 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline > li a.timeline-image-clickable::after {
+  content: "";
+  position: absolute;
+  top: -30%;
+  left: -90%;
+  width: 40%;
+  height: 160%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.12) 35%,
+    rgba(255, 255, 255, 0.65) 50%,
+    rgba(255, 255, 255, 0.12) 65%,
+    transparent 100%
+  );
+  transform: skewX(-22deg);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.timeline > li a.timeline-image-clickable:hover {
+  filter: brightness(1.18);
+  border-color: #ffffff;
+  box-shadow: 0 0 18px rgba(255, 255, 255, 0.45);
+}
+
+.timeline > li a.timeline-image-clickable:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 3px;
+}
+
+.timeline > li a.timeline-image-clickable:hover::after {
+  opacity: 1;
+  animation: timeline-logo-gleam 0.85s ease-out;
+}
+
+@keyframes timeline-logo-gleam {
+  from {
+    left: -90%;
+  }
+  to {
+    left: 140%;
+  }
+}
+
+#msuDetail {
+  z-index: 1080;
+}
+
+body.modal-open .timeline > li .timeline-image {
+  z-index: 0;
+}
+
+.timeline-detail-modal {
+  border: 1px solid #dee2e6;
+  border-radius: 0;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.timeline-detail-modal .modal-header {
+  align-items: flex-start;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.timeline-detail-modal .modal-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.timeline-detail-kicker {
+  font-size: 0.85rem;
+  color: #6c757d;
+  margin-top: 0.25rem;
+}
+
+.timeline-detail-list {
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
+.timeline-detail-list li {
+  margin-bottom: 0.75rem;
+  color: #333;
+}
+
+.timeline-detail-list li:last-child {
+  margin-bottom: 0;
+}
