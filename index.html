@@ -13,7 +13,7 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css?v=21" rel="stylesheet" />
+    <link href="css/styles.css?v=22" rel="stylesheet" />
     <!-- Particles.js library -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     </head>
@@ -61,7 +61,7 @@
                 <div class="about-content">
                     <!-- Left: Image -->
                     <div class="about-image">
-                        <img src="assets/img/profile.png" alt="David's Photo" class="profile-img" />
+                        <img src="assets/img/profile.png?v=2" alt="David Cruz Santiago" class="profile-img" />
                     </div>
                     <!-- Right: Text -->
                     <div class="about-text">
@@ -247,43 +247,51 @@
                         </div>
                     </li>
                     <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/nsf.jpeg" alt="NSF" /></div>
+                        <a class="timeline-image timeline-image-clickable" href="#nsf2025Detail" data-bs-toggle="modal" data-bs-target="#nsf2025Detail" title="Click for more" aria-label="More about this research">
+                            <img class="rounded-circle img-fluid" src="assets/img/nsf.jpeg" alt="NSF" />
+                        </a>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>Summer 2025</h4>
-                                <h4 class="subheading">N.S.F Undergraduate Researcher</h4>
+                                <h4 class="subheading">NSF Undergraduate Researcher</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Selected to pursue extensive research in the area of computational geometry and wireless sensor networks.</p></div>
+                            <div class="timeline-body"><p class="text-muted">Built an algorithm that finds where to place a new sensor so it fills a coverage hole in a wireless network.</p></div>
                         </div>
                     </li>
                     <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/skydeck_berkeley_logo.jpeg" alt="Berkeley SkyDeck" /></div>
+                        <a class="timeline-image timeline-image-clickable" href="#skydeckDetail" data-bs-toggle="modal" data-bs-target="#skydeckDetail" title="Click for more" aria-label="More about this internship">
+                            <img class="rounded-circle img-fluid" src="assets/img/skydeck_berkeley_logo.jpeg" alt="Berkeley SkyDeck" />
+                        </a>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>Fall 2024</h4>
                                 <h4 class="subheading">SkyDeck @ Berkeley</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Interned for a Berkeley SkyDeck startup in the AI and microservices space. Learned Swift and Python to test and deploy a backend service. </p></div>
+                            <div class="timeline-body"><p class="text-muted">Wrote tests and helped deploy a backend service for a SkyDeck startup.</p></div>
                         </div>
                     </li>
                     <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/YonseiUniversityEmblem.svg.jpg" alt="Yonsei University" /></div>
+                        <a class="timeline-image timeline-image-clickable" href="#yonseiDetail" data-bs-toggle="modal" data-bs-target="#yonseiDetail" title="Click for more" aria-label="More about this study abroad">
+                            <img class="rounded-circle img-fluid" src="assets/img/YonseiUniversityEmblem.svg.jpg" alt="Yonsei University" />
+                        </a>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>Summer 2024</h4>
                                 <h4 class="subheading">Study Abroad in Republic of Korea</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Studied abroad at the prestigeous Yonsei University in Seoul, South Korea.</p></div>
+                            <div class="timeline-body"><p class="text-muted">Studied at Yonsei University in Seoul, South Korea.</p></div>
                         </div>
                     </li>
                     <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/cal.jpg" alt="UC Berkeley" /></div>
+                        <a class="timeline-image timeline-image-clickable" href="#berkeleyDetail" data-bs-toggle="modal" data-bs-target="#berkeleyDetail" title="Click for more" aria-label="More about starting at Berkeley">
+                            <img class="rounded-circle img-fluid" src="assets/img/cal.jpg" alt="UC Berkeley" />
+                        </a>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>Fall 2023</h4>
                                 <h4 class="subheading">Started Undergraduate Studies</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Began my B.A. in Data Science at the University of California, Berkeley</p></div>
+                            <div class="timeline-body"><p class="text-muted">Began a B.A. in Data Science at UC Berkeley.</p></div>
                         </div>
                     </li>
                 </ul>
@@ -478,6 +486,89 @@
                             <li>Oversaw development of an ML pipeline and set the success metrics.</li>
                             <li>Directed a 16-person team to ship a full-stack ML web app in 10 weeks.</li>
                             <li>Owned the roadmap and prioritized frontend and backend work so it launched on time.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade timeline-detail" id="nsf2025Detail" tabindex="-1" aria-labelledby="nsf2025DetailLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content timeline-detail-modal">
+                    <div class="modal-header">
+                        <div>
+                            <h5 class="modal-title" id="nsf2025DetailLabel">NSF Undergraduate Researcher</h5>
+                            <p class="timeline-detail-kicker mb-0">Summer 2025 NSF REU</p>
+                        </div>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="timeline-detail-list">
+                            <li>Built an algorithm that finds the best place to put a new sensor so it fills an unmonitored gap in the network.</li>
+                            <li>Outperformed heuristic methods by computing the geometrically optimal location, not a triangle center.</li>
+                            <li>Reached 99.2% coverage efficiency in sparse networks. The next-best method reached 50.8%.</li>
+                            <li>Needed up to 48% fewer new sensors to hit the same coverage target.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade timeline-detail" id="skydeckDetail" tabindex="-1" aria-labelledby="skydeckDetailLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content timeline-detail-modal">
+                    <div class="modal-header">
+                        <div>
+                            <h5 class="modal-title" id="skydeckDetailLabel">SkyDeck @ Berkeley</h5>
+                            <p class="timeline-detail-kicker mb-0">Fall 2024 internship</p>
+                        </div>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="timeline-detail-list">
+                            <li>Wrote over 20 unit and integration tests for a backend API and login system in Swift and Firebase.</li>
+                            <li>Caught a critical bug before production.</li>
+                            <li>Fixed Firebase authentication issues in the login flow.</li>
+                            <li>Used Python to help test and deploy the backend.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade timeline-detail" id="yonseiDetail" tabindex="-1" aria-labelledby="yonseiDetailLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content timeline-detail-modal">
+                    <div class="modal-header">
+                        <div>
+                            <h5 class="modal-title" id="yonseiDetailLabel">Study Abroad in Republic of Korea</h5>
+                            <p class="timeline-detail-kicker mb-0">Summer 2024</p>
+                        </div>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="timeline-detail-list">
+                            <li>Completed Intro Machine Learning, Korean Modern History, and Korean Language 1.</li>
+                            <li>Studied at Yonsei University, one of Korea's three most prestigious and selective universities.</li>
+                            <li>Immersed in Seoul and adapted to a new academic and daily culture.</li>
+                            <li>Practiced Korean in-country, in class and in the city.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade timeline-detail" id="berkeleyDetail" tabindex="-1" aria-labelledby="berkeleyDetailLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content timeline-detail-modal">
+                    <div class="modal-header">
+                        <div>
+                            <h5 class="modal-title" id="berkeleyDetailLabel">Started Undergraduate Studies</h5>
+                            <p class="timeline-detail-kicker mb-0">Fall 2023</p>
+                        </div>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="timeline-detail-list">
+                            <li>Started a B.A. in Data Science at UC Berkeley.</li>
+                            <li>Minoring in Computer Science.</li>
+                            <li>Expected graduation May 2027.</li>
                         </ul>
                     </div>
                 </div>
