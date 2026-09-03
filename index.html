@@ -13,8 +13,9 @@
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css2?family=Radley:ital@0;1&display=swap" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css?v=27" rel="stylesheet" />
+    <link href="css/styles.css?v=33" rel="stylesheet" />
     <!-- Particles.js library -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     </head>
@@ -43,9 +44,9 @@
         <!-- Masthead-->
         <header class="masthead">
             <div class="container">
-                <div class="masthead-subheading" style="font-family: 'Radley', serif !important;">Aspiring Data Scientist</div>
+                <div class="masthead-subheading">Aspiring Data Scientist</div>
                 <div class="masthead-heading text-uppercase">David Cruz</div>
-                <p>Berkeley, CA</p>
+                <p class="masthead-location">Berkeley, CA</p>
             </div>
             <div id="particles-js"></div>
         </header>
@@ -63,11 +64,11 @@
                     <!-- Right: Text -->
                     <div class="about-text">
                         <p>
-                            Hello, I'm David. I am a fourth-year at UC Berkeley studying
+                            Hello, I'm David. I am a fourth-year student at UC Berkeley pursuing a degree in
                             <a href="https://cdss.berkeley.edu/" target="_blank" class="highlight-link">data science</a>
-                            with a
-                            <a href="https://eecs.berkeley.edu/" target="_blank" class="highlight-link">computer science</a>
-                            minor, expected May 2027. I do machine learning research on networks: recovering dynamical systems from noisy graph data, and first-author papers on where to place sensors. I am looking for data scientist and applied machine learning roles.
+                            and a minor in
+                            <a href="https://eecs.berkeley.edu/" target="_blank" class="highlight-link">computer science</a>.
+                            I expect to graduate in May 2027. My interests lie in creating impactful solutions and always learning new things. I love research and creating projects that involve creative problem-solving. In addition to my academic pursuits, I am someone who loves video editing, working on creative projects, exploring new technologies, as well as watching the symphony and opera. Thanks for stopping by!
                          </p>
                     </div>
                 </div>
@@ -88,7 +89,7 @@
                                 <h4>Summer 2026</h4>
                                 <h4 class="subheading">Machine Learning Research Intern</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Built an algorithm that takes noisy time-series from a network and finds how infection spreading and awareness of the disease affect each other.</p></div>
+                            <div class="timeline-body"><p class="text-muted">Built an algorithm that takes noisy time-series from a network and finds how infection spreading and awareness of the disease affect each other</p></div>
                         </div>
                     </li>
                     <li class="timeline-inverted">
@@ -100,7 +101,7 @@
                                 <h4>Fall 2025</h4>
                                 <h4 class="subheading">Project Manager</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Led a 16-person team to build an NLP music recommendation product.</p></div>
+                            <div class="timeline-body"><p class="text-muted">Led a 16-person team to build an NLP music recommendation product</p></div>
                         </div>
                     </li>
                     <li>
@@ -112,7 +113,7 @@
                                 <h4>Summer 2025</h4>
                                 <h4 class="subheading">NSF Undergraduate Researcher</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Built an algorithm that finds where to place a new sensor so it fills a coverage hole in a wireless network.</p></div>
+                            <div class="timeline-body"><p class="text-muted">Built an algorithm that finds where to place a new sensor so it fills a coverage hole in a wireless network</p></div>
                         </div>
                     </li>
                     <li class="timeline-inverted">
@@ -124,7 +125,7 @@
                                 <h4>Fall 2024</h4>
                                 <h4 class="subheading">SkyDeck @ Berkeley</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Wrote tests and helped deploy a backend service for a SkyDeck startup.</p></div>
+                            <div class="timeline-body"><p class="text-muted">Wrote tests and helped deploy a backend service for a SkyDeck startup</p></div>
                         </div>
                     </li>
                     <li>
@@ -136,7 +137,7 @@
                                 <h4>Summer 2024</h4>
                                 <h4 class="subheading">Study Abroad in Republic of Korea</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Studied at Yonsei University in Seoul, South Korea.</p></div>
+                            <div class="timeline-body"><p class="text-muted">Studied at Yonsei University in Seoul, South Korea</p></div>
                         </div>
                     </li>
                     <li class="timeline-inverted">
@@ -148,7 +149,7 @@
                                 <h4>Fall 2023</h4>
                                 <h4 class="subheading">Started Undergraduate Studies</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Began a B.A. in Data Science at UC Berkeley.</p></div>
+                            <div class="timeline-body"><p class="text-muted">Began a B.A. in Data Science at UC Berkeley</p></div>
                         </div>
                     </li>
                 </ul>
@@ -160,18 +161,36 @@
                     <h2 class="section-heading text-uppercase">Research</h2>
                 </div>
                 <div class="research-grid">
-                    <div class="research-card">
+                    <div class="research-card research-card-2026">
                         <p class="publication-venue">Summer 2026 NSF REU</p>
                         <p class="research-stat">Over 100x</p>
                         <h4>A readable equation, not only a forecast</h4>
                         <p class="research-hook">Recovered how infection and awareness couple on a network from noisy time-series. A graph neural ODE was over 100x worse on prediction and returned no equation.</p>
                     </div>
-                    <div class="research-card">
+                    <div class="research-card research-card-2025">
                         <p class="publication-venue">Summer 2025 NSF REU</p>
                         <p class="research-stat">99.2% vs 50.8%</p>
                         <h4>Where to put the next sensor</h4>
                         <p class="research-hook">Almost all of each new sensor covered empty space. The next-best method wasted about half of it on area already covered.</p>
                     </div>
+                    <figure class="research-figure research-figure-2026">
+                        <div class="research-chart-wrap">
+                            <canvas id="predictionErrorChart" role="img" aria-label="Bar chart of mean prediction error for weak-form SINDy, our method, versus single-layer SINDy and a graph neural ODE at 0 percent and 10 percent noise. Weak-form SINDy is lowest at both noise levels. At 10 percent noise the graph neural ODE is about 290 times worse."></canvas>
+                        </div>
+                        <noscript>
+                            <img src="assets/img/prediction-error-by-model.png" alt="Bar chart of mean prediction error for three models at 0 percent and 10 percent noise. Weak-form SINDy is lowest at both noise levels." width="1256" height="760" />
+                        </noscript>
+                        <figcaption>Mean prediction error on a 50-node random graph, 10 seeds. Weak-form SINDy is our method. At 10% noise the graph neural ODE was about 290 times worse, and it returned no equation.</figcaption>
+                    </figure>
+                    <figure class="research-figure research-figure-2025">
+                        <div class="research-chart-wrap">
+                            <canvas id="coverageEfficiencyChart" role="img" aria-label="Bar chart of coverage efficiency versus number of deployed nodes. GIBHRA, our algorithm, is highest at every density. At 200 nodes it reaches 99.2 percent, versus 50.8 percent for the next-best method."></canvas>
+                        </div>
+                        <noscript>
+                            <img src="assets/img/gibhra-coverage-efficiency.jpg" alt="Bar chart of coverage efficiency versus number of deployed nodes. GIBHRA is highest at every density." width="1024" height="654" />
+                        </noscript>
+                        <figcaption>Coverage efficiency of each new sensor: share of its sensing area that covers a hole, not space already monitored. GIBHRA (red) is our algorithm.</figcaption>
+                    </figure>
                 </div>
             </div>
         </section>
@@ -253,7 +272,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/profileofmeOP.jpg" alt="..." />
+                            <img class="mx-auto rounded-circle" src="assets/img/profile.png?v=2" alt="David Cruz Santiago" />
                             <h4>David Cruz Santiago</h4>
                             <p class="text-muted">Get in touch</p>
                             <a class="btn btn-dark btn-social mx-2" href="https://linkedin.com/in/davidcruz-cs" aria-label="https://linkedin.com/in/davidcruz-cs"><i class="fab fa-linkedin-in"></i></a>
@@ -267,7 +286,7 @@
         <footer class="footer py-4">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-4 text-lg-start">2026 &copy; David Cruz Santiago</div>
+                    <div class="col-lg-12 text-center">2026 &copy; David Cruz Santiago</div>
                     
                    
                 </div>
@@ -285,10 +304,10 @@
                     </div>
                     <div class="modal-body">
                         <ul class="timeline-detail-list">
-                            <li>Used weak-form SINDy to recover the infection-awareness coupling from noisy time-series. Standard SINDy failed at 10% noise. This method did not.</li>
-                            <li>Outperformed a graph neural ODE by over 100x on prediction, and returned a readable equation rather than only a forecast.</li>
-                            <li>Validated on real Facebook, Gnutella, and U.S. power-grid graphs, not only synthetic ones.</li>
-                            <li>Recovered the coupling on Gnutella when only 10% of nodes were observed.</li>
+                            <li>Used weak-form SINDy to recover the infection-awareness coupling from noisy time-series. Standard SINDy failed at 10% noise. This method did not</li>
+                            <li>Outperformed a graph neural ODE by over 100x on prediction, and returned a readable equation rather than only a forecast</li>
+                            <li>Validated on real Facebook, Gnutella, and U.S. power-grid graphs, not only synthetic ones</li>
+                            <li>Recovered the coupling on Gnutella when only 10% of nodes were observed</li>
                         </ul>
                     </div>
                 </div>
@@ -306,10 +325,10 @@
                     </div>
                     <div class="modal-body">
                         <ul class="timeline-detail-list">
-                            <li>Defined product requirements and ran user research to set the product direction.</li>
-                            <li>Oversaw development of an ML pipeline and set the success metrics.</li>
-                            <li>Directed a 16-person team to ship a full-stack ML web app in 10 weeks.</li>
-                            <li>Owned the roadmap and prioritized frontend and backend work so it launched on time.</li>
+                            <li>Defined product requirements and ran user research to set the product direction</li>
+                            <li>Oversaw development of an ML pipeline and set the success metrics</li>
+                            <li>Directed a 16-person team to ship a full-stack ML web app in 10 weeks</li>
+                            <li>Owned the roadmap and prioritized frontend and backend work so it launched on time</li>
                         </ul>
                     </div>
                 </div>
@@ -327,10 +346,10 @@
                     </div>
                     <div class="modal-body">
                         <ul class="timeline-detail-list">
-                            <li>Built an algorithm that finds the best place to put a new sensor so it fills an unmonitored gap in the network.</li>
-                            <li>Outperformed heuristic methods by computing the geometrically optimal location, not a triangle center.</li>
-                            <li>Reached 99.2% coverage efficiency in sparse networks. The next-best method reached 50.8%.</li>
-                            <li>Needed up to 48% fewer new sensors to hit the same coverage target.</li>
+                            <li>Built an algorithm that finds the best place to put a new sensor so it fills an unmonitored gap in the network</li>
+                            <li>Outperformed heuristic methods by computing the geometrically optimal location, not a triangle center</li>
+                            <li>Reached 99.2% coverage efficiency in sparse networks. The next-best method reached 50.8%</li>
+                            <li>Needed up to 48% fewer new sensors to hit the same coverage target</li>
                         </ul>
                     </div>
                 </div>
@@ -348,10 +367,10 @@
                     </div>
                     <div class="modal-body">
                         <ul class="timeline-detail-list">
-                            <li>Wrote over 20 unit and integration tests for a backend API and login system in Swift and Firebase.</li>
-                            <li>Caught a critical bug before production.</li>
-                            <li>Fixed Firebase authentication issues in the login flow.</li>
-                            <li>Used Python to help test and deploy the backend.</li>
+                            <li>Wrote over 20 unit and integration tests for a backend API and login system in Swift and Firebase</li>
+                            <li>Caught a critical bug before production</li>
+                            <li>Fixed Firebase authentication issues in the login flow</li>
+                            <li>Used Python to help test and deploy the backend</li>
                         </ul>
                     </div>
                 </div>
@@ -369,10 +388,10 @@
                     </div>
                     <div class="modal-body">
                         <ul class="timeline-detail-list">
-                            <li>Completed Intro Machine Learning, Korean Modern History, and Korean Language 1.</li>
-                            <li>Studied at Yonsei University, one of Korea's three most prestigious and selective universities.</li>
-                            <li>Immersed in Seoul and adapted to a new academic and daily culture.</li>
-                            <li>Practiced Korean in-country, in class and in the city.</li>
+                            <li>Completed Intro Machine Learning, Korean Modern History, and Korean Language 1</li>
+                            <li>Studied at Yonsei University, one of Korea's three most prestigious and selective universities</li>
+                            <li>Immersed in Seoul and adapted to a new academic and daily culture</li>
+                            <li>Practiced Korean in-country, in class and in the city</li>
                         </ul>
                     </div>
                 </div>
@@ -390,16 +409,18 @@
                     </div>
                     <div class="modal-body">
                         <ul class="timeline-detail-list">
-                            <li>Started a B.A. in Data Science at UC Berkeley.</li>
-                            <li>Minoring in Computer Science.</li>
-                            <li>Expected graduation May 2027.</li>
+                            <li>Started a B.A. in Data Science at UC Berkeley</li>
+                            <li>Minoring in Computer Science</li>
+                            <li>Expected graduation May 2027</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
         <script src="js/scripts.js"></script>
+        <script src="js/research-charts.js?v=5"></script>
         
         <!-- Particles.js initialization -->
         <script>
@@ -447,14 +468,30 @@
                             enable: true,
                             mode: "push",
                         },
+                        resize: true,
                     },
                     modes: {
+                        grab: {
+                            distance: 400,
+                            line_linked: {
+                                opacity: 1,
+                            },
+                        },
+                        bubble: {
+                            distance: 400,
+                            size: 40,
+                            duration: 2,
+                            opacity: 8,
+                            speed: 3,
+                        },
                         repulse: {
-                            distance: 150,
-                            duration: 0.4,
+                            distance: 200,
                         },
                         push: {
                             particles_nb: 4,
+                        },
+                        remove: {
+                            particles_nb: 2,
                         },
                     },
                 },
