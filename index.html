@@ -15,7 +15,7 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css2?family=Radley:ital@0;1&display=swap" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css?v=33" rel="stylesheet" />
+    <link href="css/styles.css?v=34" rel="stylesheet" />
     <!-- Particles.js library -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     </head>
@@ -173,24 +173,6 @@
                         <h4>Where to put the next sensor</h4>
                         <p class="research-hook">Almost all of each new sensor covered empty space. The next-best method wasted about half of it on area already covered.</p>
                     </div>
-                    <figure class="research-figure research-figure-2026">
-                        <div class="research-chart-wrap">
-                            <canvas id="predictionErrorChart" role="img" aria-label="Bar chart of mean prediction error for weak-form SINDy, our method, versus single-layer SINDy and a graph neural ODE at 0 percent and 10 percent noise. Weak-form SINDy is lowest at both noise levels. At 10 percent noise the graph neural ODE is about 290 times worse."></canvas>
-                        </div>
-                        <noscript>
-                            <img src="assets/img/prediction-error-by-model.png" alt="Bar chart of mean prediction error for three models at 0 percent and 10 percent noise. Weak-form SINDy is lowest at both noise levels." width="1256" height="760" />
-                        </noscript>
-                        <figcaption>Mean prediction error on a 50-node random graph, 10 seeds. Weak-form SINDy is our method. At 10% noise the graph neural ODE was about 290 times worse, and it returned no equation.</figcaption>
-                    </figure>
-                    <figure class="research-figure research-figure-2025">
-                        <div class="research-chart-wrap">
-                            <canvas id="coverageEfficiencyChart" role="img" aria-label="Bar chart of coverage efficiency versus number of deployed nodes. GIBHRA, our algorithm, is highest at every density. At 200 nodes it reaches 99.2 percent, versus 50.8 percent for the next-best method."></canvas>
-                        </div>
-                        <noscript>
-                            <img src="assets/img/gibhra-coverage-efficiency.jpg" alt="Bar chart of coverage efficiency versus number of deployed nodes. GIBHRA is highest at every density." width="1024" height="654" />
-                        </noscript>
-                        <figcaption>Coverage efficiency of each new sensor: share of its sensing area that covers a hole, not space already monitored. GIBHRA (red) is our algorithm.</figcaption>
-                    </figure>
                 </div>
             </div>
         </section>
@@ -418,9 +400,7 @@
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
         <script src="js/scripts.js"></script>
-        <script src="js/research-charts.js?v=5"></script>
         
         <!-- Particles.js initialization -->
         <script>
